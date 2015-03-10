@@ -130,3 +130,12 @@ img[align="left"] {
 img[align="right"] {
     float: left;
 }
+
+/* make highlighted text invisible */
+::-moz-selection{
+	color:rgba(0, 0, 0, 0);
+}
+
+::selection {
+	color: rgba(0, 0, 0, 0);
+}
