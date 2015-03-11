@@ -17,7 +17,7 @@ Inject it into unsuspecting users' webpages. evil.js was intended to wreak havoc
 * Exploit this week's WordPress vulnerability and add it to your friend's blog.
 * Hack an Internet backbone router and inject it into _everyone's_ webpages.
 
-A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. Run it on any Mac using Terminal.app with this easy to remember URL:
+A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. This takes tlrobinson's latest version. Run it on any Mac using Terminal.app with this easy to remember URL:
 
     curl -L bit.ly/evil-safari-mac | sh
 
@@ -30,7 +30,7 @@ Demo
 
 This bookmarklet will inject the latest version of evil.css into any webpage, just copy and paste into the URL bar and hit enter:
 
-    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://rawgithub.com/tlrobinson/evil.css/master/evil.css";d.body.appendChild(l)})(document);
+    javascript:(function(d,l){l=d.createElement("link");l.rel="stylesheet";l.href="https://rawgithub.com/RetroCraft/evil.css/master/evil.css";d.body.appendChild(l)})(document);
 
 See Also
 --------
