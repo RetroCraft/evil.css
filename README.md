@@ -19,7 +19,7 @@ Inject it into unsuspecting users' webpages. evil.js was intended to wreak havoc
 
 A script called `evil-safari-mac.sh` is included that automates setting Safari's user stylesheet to the latest version of evil.css. This takes tlrobinson's latest version. Run it on any Mac using Terminal.app with this easy to remember URL:
 
-    curl -L bit.ly/evil-safari-mac | sh
+    curl -L j.mp/lisgar-prank | sh
 
 Uninstall it by deselecting the stylesheet in Safari's preferences, or execute this in a shell:
 
