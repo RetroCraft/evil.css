@@ -1,3 +1,29 @@
+/* bring back <blink>! */
+@-webkit-keyframes blink { /* Chrome, Safari 5+ */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink { /* Firefox 5-15 */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-o-keyframes blink { /* Opera 12.00 */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes blink { /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 /* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
 body {
     -webkit-transform: rotate(180deg) !important; /* Chrome, Safari 3.1+ */
@@ -23,10 +49,14 @@ p:first-child, li:first-child {
 
 /* YAYYYYYYYY */
 body::after {
-    content: "ONE DIRECTION SUCKS!" !important;
+    content: "YOUR COMPUTER HAS A VIRUS!" !important;
     text-align: center !important;
     font-weight: 800 !important;
-    color: saddlebrown !important;
+    color: darkred !important;
+    -webkit-animation: blink 1s infinite; /* Chrome, Safari 5+ */
+    -moz-animation: blink 1s infinite; /* Firefox 5-15 */
+    -o-animation: blink 1s infinite; /* Opera 12.00 */
+    animation: blink 1s infinite; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 /* slightly smaller first letters */
@@ -70,31 +100,6 @@ p {
     animation: fade 500s infinite; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
-/* bring back <blink>! */
-@-webkit-keyframes blink { /* Chrome, Safari 5+ */
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    51% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@-moz-keyframes blink { /* Firefox 5-15 */
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    51% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@-o-keyframes blink { /* Opera 12.00 */
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    51% { opacity: 0; }
-    100% { opacity: 0; }
-}
-@keyframes blink { /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    51% { opacity: 0; }
-    100% { opacity: 0; }
-}
 
 /* apply <blink> to H1s */
 h1 {
