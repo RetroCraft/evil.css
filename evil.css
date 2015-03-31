@@ -21,6 +21,14 @@ p:first-child, li:first-child {
     display: none !important;
 }
 
+/* YAYYYYYYYY */
+body::after {
+    content: "ONE DIRECTION SUCKS!" !important;
+    text-align: center !important;
+    font-weight: 800 !important;
+    color: saddlebrown !important;
+}
+
 /* slightly smaller first letters */
 *:first-letter {
     font-size: 90% !important;

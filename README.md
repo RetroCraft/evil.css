@@ -23,7 +23,8 @@ A script called `evil-safari-mac.sh` is included that automates setting Safari's
 
 Uninstall it by deselecting the stylesheet in Safari's preferences, or execute this in a shell:
 
-    defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "1"
+    defaults write "com.apple.Safari" "WebKitUserStyleSheetEnabledPreferenceKey" "0"
+    defaults write "com.apple.Safari" "UserStyleSheetEnabled" "0"
 
 Demo
 ----
