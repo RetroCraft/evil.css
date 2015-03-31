@@ -48,11 +48,13 @@ p:first-child, li:first-child {
 }
 
 /* YAYYYYYYYY */
-body::after {
-    content: "YOUR COMPUTER HAS A VIRUS!" !important;
+body::before {
+    content: "WASTED!" !important;
     text-align: center !important;
     font-weight: 800 !important;
+    font-size: 30px !important;
     color: darkred !important;
+    width: 100%;
     -webkit-animation: blink 1s infinite; /* Chrome, Safari 5+ */
     -moz-animation: blink 1s infinite; /* Firefox 5-15 */
     -o-animation: blink 1s infinite; /* Opera 12.00 */
